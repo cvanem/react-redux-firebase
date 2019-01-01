@@ -17,6 +17,11 @@ function ReactReduxFirebaseProvider(props = {}) {
     config,
     dispatch
   )
+  console.log('Extended Firebase Instance');
+  console.log(extendedFirebaseInstance);
+  console.log(ReactReduxFirebaseContext.Provider);
+  console.log('children');
+  console.log(children);
   if (createFirestoreInstance) {
     return (
       <ReactReduxFirebaseContext.Provider value={extendedFirebaseInstance}>
